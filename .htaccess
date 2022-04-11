@@ -1,0 +1,18 @@
+RewriteEngine on
+# HTID:17841934: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17841934:
+ErrorDocument 404 /404.html
+
+RewriteCond %{app.js} -d [OR]
+RewriteCond %{app.js} -f
+RewriteRule "(^|/)\." - [F]
+RewriteCond %{particles.js} -d [OR]
+RewriteCond %{particles.js} -f
+RewriteRule "(^|/)\." - [F]
+RewriteCond %{index.js} -d [OR]
+RewriteCond %{index.js} -f
+RewriteRule "(^|/)\." - [F]
+RewriteCond %{index.css} -d [OR]
+RewriteCond %{index.css} -f
+RewriteRule "(^|/)\." - [F]
