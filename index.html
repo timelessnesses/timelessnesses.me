@@ -58,11 +58,38 @@
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
 
         <h1>Rukchad Wongprayoon</h1>
-        <!-- <h2>Software Developer / Computer Technology Student / Gamer</h2> -->
         
-        <h2>I am 15 years old coder that stay in Thailand!</h2>
-        <h2>Can code Python,Go,Lua,C# (probably)</h2>
+        <h2 id="age"></h2>
+        <h2 id="random_programming_languages"></h2>
 
+        <script>
+            var age = new Date().getFullYear() - 2007;
+            document.getElementById("age").innerHTML = `a ${age} year old coder who lives in thailand (yes this is dynamic)`;
+            const languages = [
+                'c#',
+                'java',
+                'go',
+                'little bit of rust',
+                'little bit of c',
+                'little bit of c++',
+                'lua',
+                'javascript',
+                'typescript',
+                'little bit of css',
+                'sveltekit'
+            ];
+            const top_3_languages = [];
+            for (let i = 0; i < 3; i++) {
+                const random_index = Math.floor(Math.random() * languages.length);
+                if(top_3_languages.includes(languages[random_index])) {
+                    i--;
+                    continue;
+                }
+                top_3_languages.push(languages[random_index]);
+            }
+            document.getElementById("random_programming_languages").innerHTML = `i know mainly python and ${top_3_languages.join(', ')}`;
+            
+        </script>
         
         <table>
 
