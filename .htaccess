@@ -16,3 +16,6 @@ RewriteRule "(^|/)\." - [F]
 RewriteCond %{index.css} -d [OR]
 RewriteCond %{index.css} -f
 RewriteRule "(^|/)\." - [F]
+RewriteCond %{ass_gradient.jpg} -d [OR]
+RewriteCond %{ass_gradient.jpg} -f
+RewriteRule "(^|/)\." - [F]
