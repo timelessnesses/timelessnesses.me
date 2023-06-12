@@ -14,7 +14,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
-	background: rgb(0, 222, 255);
+	background: orange;
 	/*background color when load*/
 	z-index: 999;
 	display: flex;
@@ -58,12 +58,12 @@ body {
 }
 
 .box1 {
-	background: rgb(0, 222, 255);
+	background: rgb(255,140,0);
 	/*Color box that fade*/
 }
 
 .box2 {
-	background: rgb(0, 222, 255);
+	background: rgb(230,126,0);
 	/*Color box that fade*/
 	margin-left: -5px;
 }
@@ -78,7 +78,7 @@ body {
 #menu a {
 	margin: 0px 6%;
 	font-size: 19px;
-	color: #fff;
+	color: orange;
 	text-decoration: underline;
 }
 
@@ -145,13 +145,13 @@ body {
 }
 
 #about:hover {
-	background: rgba(0, 222, 255, 0.9);
+	background: rgb(230,126,0);
 	/*Color when hover*/
 	cursor: pointer;
 }
 
 #work:hover {
-	background: rgba(0, 222, 255, 0.9);
+	background: rgb(230,126,0);
 	/*Color when hover*/
 	cursor: pointer;
 }
