@@ -102,7 +102,7 @@ body {
 	font-size: 70px;
 	text-decoration: underline;
 	h1.blue::selection {
-		background: #fc0606
+		background: #f78707
 	}
 }
 
@@ -176,7 +176,7 @@ body {
 
 .social:hover {
 	cursor: pointer;
-	color: rgb(230,126,0);
+	color: #f78707;
 	/*Color when hover*/
 }
 
